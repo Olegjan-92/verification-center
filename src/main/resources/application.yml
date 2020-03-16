@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/verification-center
+    username: postgres
+    password: postgres
+
+  liquibase:
+    change-log: classpath:liquibase/db.changelog-master.xml
+    url: jdbc:postgresql://localhost:5432/verification-center
+    user: postgres
+    drop-first: true
+
+jwt:
+  token:
+    secret: verification-center
+    expired: 3600000
