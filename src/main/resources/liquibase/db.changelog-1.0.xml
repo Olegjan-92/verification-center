@@ -26,7 +26,7 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-        <createSequence sequenceName="users_id_sequence"/>
+        <createSequence sequenceName="users_id_sequence" startValue="3"/>
     </changeSet>
 
     <changeSet author="Samoylenko" id="1.0.1">
@@ -70,8 +70,8 @@
 
     <changeSet author="Samoylenko" id="1.0.7">
         <insert tableName="users">
-            <column name="login" value="admin"/>
-            <column name="password" value="$2a$04$FS7VeOsfyLrIfCBGBz4HUelZF0VQZIvxkxSnsr6AkdmuBGmLhV4Me"/>
+            <column name="login" value="7044499196"/>
+            <column name="password" value="$2a$10$o8nBO5WpltsrDpRuUjAdmusBSveC/TpnCXqzi9s.dQvEnOkUvm8tq"/>
             <column name="first_name" value="Иван"/>
             <column name="last_name" value="Иванович"/>
             <column name="sur_name" value="Иванов"/>
